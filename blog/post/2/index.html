@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
@@ -9,11 +8,11 @@
     <title>Should You Learn Python or JavaScript First?</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f7f6;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            background-color: #f4f4f4;
             color: #333;
         }
         .navbar {
@@ -21,19 +20,6 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        main {
-            padding: 2rem 10%;
-            background-color: white;
-            margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .navbar a {
             color: white;
@@ -80,58 +66,69 @@
             background: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2em;
             text-align: center;
         }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        .cta {
-            background-color: #ff6347;
-            color: white;
-            padding: 10px 20px;
-            display: inline-block;
-            font-weight: bold;
-            text-decoration: none;
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            height: auto;
             border-radius: 5px;
         }
-
-        .cta:hover {
-            background-color: #e53e2c;
+        p {
+            margin: 10px 0;
         }
-
-        footer {
+        .author {
             text-align: center;
-            background-color: #4CAF50;
-            padding: 1rem;
-            color: white;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+        .date {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .citation {
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+        footer {
             margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
         }
     </style>
   </head>
   <body>
-    <div class="navbar"> <a href="https://theenglishblogger.github.io/">Welcome</a> <a href="https://theenglishblogger.github.io/resume.pdf">Resume</a>
-      <a href="https://theenglishblogger.github.io/blog">Blogs</a> <a href="https://theenglishblogger.github.io/biography">Biography</a> </div>
-    <header>
+    <div class="navbar"> <a href="https://theenglishblogger.github.io/">Welcome</a>
+      <a href="https://theenglishblogger.github.io/resume.pdf">Resume</a>
+      <a href="https://theenglishblogger.github.io/blog">Blogs</a> <a
+        href="https://theenglishblogger.github.io/biography">Biography</a>
+    </div>
+    <div class="container">
       <h1>Should You Learn Python or JavaScript First?</h1>
-    </header>
-    <main>
-      <div align="center">
-  <img 
-    src="https://s11.gifyu.com/images/Syjc6.gif" alt="jscode" 
-    style="max-width: 75%; height: auto;">
-  <br>
-  (Above is an image I made of Javascript in an HTML Document)<br>
-</div>
+      <img src="https://s11.gifyu.com/images/Syjc6.gif" alt="HTML Source
+        Code from an IDE">
+      <p class="citation">Image by Sean McLaughlin<br>
+      </p>
+      <p class="author"><strong>Sean McLaughlin</strong></p>
+      <p class="date">November 11, 2024</p>
       <p>When starting out in the world of programming, choosing the
         right language to learn first can be a pivotal decision. Among
         the most popular and accessible options are Python and
@@ -242,9 +239,7 @@
         applications. Its major role in the sphere of web development
         makes it the more preferable choice if your primary concern is
         web-oriented projects.</p>
-      <a href="https://theenglishblogger.github.io/blog/post/2/letslearn" class="cta">Start Learning Today!</a> </main>
-    <footer>
-      <p>© 2024 Your Learning Resource. All rights reserved.</p>
-    </footer>
+      <footer>bottom text</footer>
+    </div>
   </body>
 </html>
