@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT: Will it replace human programmers?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            color: white;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover a {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2em;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .author {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+        .date {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .citation {
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Welcome</a>
+        <a href="#">Resume</a>
+        <a href="#">Blogs</a>
+        <a href="#">Biography</a>
+    </div>
+    
+    <div class="container">
+        <h1>ChatGPT: Will it replace human programmers?</h1>
+        <img src="https://images.pexels.com/photos/16629368/pexels-photo-16629368/free-photo-of-webpage-of-chatgpt-a-prototype-ai-chatbot-is-seen-on-the-website-of-openai-on-a-smartphone-examples-capabilities-and-limitations-are-shown.jpeg" 
+        alt="ChatGPT webpage displayed on a smartphone">
+        <p class="citation">Image by <a href="https://www.pexels.com/photo/16629368/" target="_blank">Sanket Mishra</a> from Pexels</p>
+        <p class="author"><strong>Sean McLaughlin</strong></p>
+        <p class="date">November 11, 2024</p>
+        <p>For years, OpenAI has worked on its famous chatbot ChatGPT. By asking a chatbot the same way you ask a person, it seems able to program whatever you ask it to. The chatbot is even able to debug the code it writes, in case it generates something that does not work as intended. However, will AI replace programmers? I think not given the data we were given in June about just how good the chatbot is at programming.</p>
+
+        <p>Results found from the June issue of <a href="https://spectrum.ieee.org/chatgpt-for-coding" target="_blank"><em>IEEE Transactions on Software Engineering</em></a> found from evaluating tons of code the chatbot made, the chatbot is not constantly able to output working code. The success rate from this study when it came to successfully producing functional code was between 0.66 percent and 89 percent at best. Programmers working in the workforce deal with a wide variety of tasks. Some of these tasks are simple, while others are tough. The difficulty of the task measured differs depending on what programmer you ask. However for ChatGPT, the chatbot will find its struggles based on the programming language in question, the imported packages being used in each program, and how many tasks have to be accomplished for each program.</p>
+
+        <p>Sometimes ChatGPT fails to program simply because it does not know what it is being asked to do. This can likely be attributed to all the different languages the AI had to be trained to recognize the prompts in. In addition, its programming capabilities were not only what OpenAI wanted to produce from ChatGPT. ChatGPT is being used for much more than programming. People use ChatGPT to review grammar in their emails and ask questions for quick answers generated from its huge library of data. I used ChatGPT many times throughout the summer to rediscover movies that I remembered the plot of, but could not remember the title of.</p>
+
+        <p>So does this mean using ChatGPT to generate code is a waste of time? I do not think so. The June issue found that “in some cases the AI generator could produce better code than humans…”, but the issue also found their “analysis also reveals some security concerns with AI-generated code.” (Hampson) I’d like to point out that the evidence of security concerns from the AI-generated code is concerning. My belief stems from the evidence that only C, C++, Java, JavaScript, and Python were tested throughout the entire study. With that in mind, there are many untested security concerns that might exist in other scripts AI generates in HTML. For example, I told ChatGPT I wanted to build a homepage that would not show contents on the page until I entered a passcode. The chatbot generated a working page, however the code I needed to enter to access the page was visible in plain site. The code was not hashed, or stored on a secure server so a person with basic inspect element skills could bypass the lock. In addition, the chatbot did not recommend having the login page separate from the page that has the content. This means the content on the webpage was still being loaded into the visitor’s browser, despite them not being authorized to access the content in theory.</p>
+
+        <p>The researchers in the June Issue found that many of the vulnerabilities in the AI generated code were easily fixable. However, many of these vulnerabilities will go undetected, unless a real programmer is there to check the code. That’s why in the future, I believe AI will become a powerful tool for programmers to code with, rather than AI replacing programmers. Many programmers use IDEs to write their code. IntelliJ has begun to include an AI assistant that can artificially generate explanations to what code does. If you want to learn how to start reading and writing code for yourself, be sure to check out my next post here.</p>
+
+        <footer>bottom text</footer>
+    </div>
+</body>
+</html>
