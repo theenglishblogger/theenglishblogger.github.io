@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0">
+    <title>Sean's Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            color: white;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover a {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 2em;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .biography-list {
+            list-style: none;
+            padding: 0;
+        }
+        .biography-list li {
+            margin: 8px 0;
+        }
+        .biography-list a {
+            color: #333;
+            text-decoration: none;
+        }
+        .biography-list a:hover {
+            color: #007BFF;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="navbar"> <a href="#">Welcome</a> <a href="#">Resume</a>
+      <a href="#">Blogs</a> <a href="#">Biography</a> </div>
+    <div class="container">
+      <h1>My Blog</h1>
+      <p>Welcome to my blog! Below you will find links to each of my
+        blog entries by month. </p>
+      <h2>November 2024<br>
+      </h2>
+      <ul class="biography-list">
+        <li><a href="#">ChatGPT: Will It Replace Human Programmers?<br>
+          </a></li>
+        <li><a href="#">Should You Learn Python or JavaScript First?<br>
+          </a></li>
+        <li><a href="#">Third Link<br>
+          </a></li>
+      </ul>
+    </div>
+  </body>
+</html>
