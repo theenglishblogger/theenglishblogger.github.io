@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            color: white;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover a {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 2em;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Welcome</a>
+      <a href="#">Resume</a>
+      <a href="#">Blogs</a>
+      <a href="#">Biography</a>
+    </div>
+
+    <!-- Biography Section -->
+    <div class="container">
+      <h1>Biography of Sean McLaughlin</h1>
+      <p>Welcome to my biography page! I am Sean McLaughlin, a passionate web developer, writer, and lifelong learner.</p>
+      <p>Born and raised in the vibrant city of San Francisco, I developed an early interest in technology, particularly web development. After completing my degree in Computer Science at the University of California, Berkeley, I embarked on a career that has allowed me to work with diverse teams and clients, building websites and applications that make a difference.</p>
+      
+      <p>Over the years, I have honed my skills in front-end and back-end development, specializing in technologies like HTML, CSS, JavaScript, and Node.js. I am also passionate about writing, and I regularly contribute blog posts on topics related to technology, programming, and personal growth.</p>
+      
+      <p>Outside of work, I enjoy hiking in the California hills, reading science fiction novels, and volunteering with local coding workshops for underprivileged youth. I believe in the power of technology to transform lives, and I am always looking for new ways to combine my technical skills with my passion for making a positive impact in the world.</p>
+      
+      <p>I invite you to explore my resume, blog, and more on this website. If you'd like to collaborate on a project or just connect, feel free to reach out!</p>
+    </div>
+    
+  </body>
+</html>
