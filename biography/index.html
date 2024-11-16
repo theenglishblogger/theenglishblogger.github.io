@@ -1,109 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
       initial-scale=1.0">
-    <title>Sean's Biography</title>
+    <title>Welcome Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-image: url('https://i1.pickpik.com/photos/906/1/293/programming-code-development-web-cc5cc9bba74aa3a208f7bd29d9330d55.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: yellow;
         }
         .navbar {
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.8);
             overflow: hidden;
             display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
             justify-content: center;
+            margin-bottom: 20px;
         }
         .navbar a {
             color: white;
             text-decoration: none;
-            padding: 14px 20px;
+            padding: 10px 15px; /* Slightly reduce padding */
             display: block;
             text-align: center;
         }
         .navbar a:hover {
             background-color: #575757;
         }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            min-width: 160px;
-            z-index: 1;
-            border-radius: 5px;
-        }
-        .dropdown-content a {
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-            color: white;
-        }
-        .dropdown-content a:hover {
-            background-color: #575757;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .dropdown:hover a {
-            background-color: #575757;
-        }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: #fff;
+            background: rgba(68, 68, 68, 0.8);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            text-align: left;
         }
         h1 {
-            color: #333;
+            color: yellow;
             font-size: 2em;
-            text-align: center;
-        }
-        img {
-            display: block;
-            margin: 10px auto;
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
+            margin-bottom: 10px;
         }
         p {
             margin: 10px 0;
+            font-size: 1.2em;
+            color: yellow;
         }
-        .author {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 1.1em;
+        a {
+            color: yellow;
         }
-        .date {
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
+        a:hover {
+            text-decoration: underline;
         }
-        .citation {
-            text-align: center;
-            font-size: 0.8em;
-            color: #666;
-            margin-top: 5px;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #666;
-            text-align: center;
+        img {
+            max-width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
         }
         @media (max-width: 600px) {
             h1 {
@@ -117,16 +77,22 @@
     </style>
   </head>
   <body>
-    <div class="navbar"> <a href="https://theenglishblogger.github.io/">Welcome</a>
-      <a href="https://theenglishblogger.github.io/resume.pdf">Resume</a>
-      <a href="https://theenglishblogger.github.io/blog">Blogs</a> <a
-        href="https://theenglishblogger.github.io/biography">Biography</a>
-    </div>
     <div class="container">
-      <h1>Biography of Sean McLaughlin<br>
-      </h1>
-      Welcome to my biography page! I am Sean McLaughlin, a passionate
-      web developer and lifelong learner.
+      <h1 align="center"> <img
+src="https://media.licdn.com/dms/image/v2/D4E03AQEePM28HtqvJg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713312589820?e=2147483647&amp;v=beta&amp;t=Oox20UqNffcmoTS2A4-RC3cZBca5BHoEe97NfSJZuxw"
+          alt="Sean McLaughlin"> </h1>
+      <div class="navbar"> <a
+          href="https://theenglishblogger.github.io/">Welcome</a> <a
+          href="https://theenglishblogger.github.io/resume.pdf">Resume</a>
+        <a href="https://theenglishblogger.github.io/blog/">Blogs</a> <a
+          href="https://theenglishblogger.github.io/biography/">Biography</a>
+        <a href="https://theenglishblogger.github.io/contributors/">Contributors</a>
+        <!-- New link added here --> </div>
+      <hr style="border: 1px solid yellow; margin: 20px 0;">
+      <h1 align="center">Biography of Sean McLaughlin</h1>
+      <hr style="border: 1px solid yellow; margin: 20px 0;">
+      <p>Welcome to my biography page! I am Sean McLaughlin, a
+        passionate web developer and lifelong learner. </p>
       <p>When I was younger I spent a lot of my time online. I browsed
         tons of different websites throughout my childhood. I browsed
         through blogs, forums, and of course I frequented some social
@@ -171,9 +137,7 @@
         advertising, but I thought that I could make a greater impact on
         the people around me by learning how to help others secure their
         digital assets. It did not take me much longer to get back on
-        YouTube and practicing my coding again.<br>
-      </p>
-      <footer>bottom text</footer>
+        YouTube and practicing my coding again. </p>
     </div>
   </body>
 </html>
